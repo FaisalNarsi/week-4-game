@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Faisal's week-4-game </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Crystal Collector!</h1> 
+
+<script type="text/javascript" src="Game4.js"></script>
+
+<div id="container">
+	<div id="Directions">	
+
+		<h3> Directions </h3>
+		<ul>
+		You will be given random number at the start of the game. <br>There are four crystals below. By on crystals you will add a specific amount of points of your total score. <br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. <br> The value of each crystals is hidden from you until you click on it. <br> Each time when the game starts, the game will change the values of each crystal.</ul>
+	</div>
+	
+
+	<!-- guesses left counter, win, loss, and scoreboard counters -->
+
+		<div id="guessingNumber">
+			<h2>Number to Guess: <span class="value"></span></h2> 	
+		</div>
+
+		<div id="scoreboard">
+			<h3><span id="status"></span></h3>
+			<h3>Wins: <span id="win"></span></h3>
+			<h3>Losses: <span id="loss"></span> </h3>
+		</div>
+	</div>
+
+	
+	<div id="crystals"></div>
+
+	<div id ="totalScore">
+		<h2 id = "yourtotal">Your Total Score is: <span id ="yourScore">0</span></h2>
+		
+	</div>
+
+
+<!-- Crystal Buttons -->
+
+
+<div class = "crystals">
+	<button><img id="redcrystal" src="redCrystal.png" width="50px" height="50px">Red Crystal</button>
+
+	<button><img id="greencrystal" src="greenCrystal.png" width="50px" height="50px">Green Crystal</button>
+
+	<button><img id="purplecrystal" src="purpleCrystal.jpg" width="50px" height="50px">Purple Crystal</button>
+
+	<button><img id="whitecrystal" src="WhiteCrystal.png" width="50px" height="50px">White Crystal</button>
+</div>
+
+
+
+	
+<!--  jQuery -->
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
